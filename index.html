@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee|Nothing+You+Could+Do|Open+Sans+Condensed:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="/jspm_packages/github/hakimel/reveal.js@3.3.0/css/reveal.css">
+    <link rel="stylesheet" href="/jspm_packages/github/hakimel/reveal.js@3.3.0/css/theme/white.css">
+    <link rel="stylesheet" href="/src/css/common.css">
+
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section  data-background-color="#00bcd4">
+                <div class="title_wrapper">
+                    <h1 class="main-slide title_header" >CYBER ATTACKS</h1>
+                </div>
+                <p class="author">
+                    Ewa Nestorowicz
+                </p>
+
+            </section>
+
+            <section>
+                <h1 class="main-title">
+                    Agenda
+                </h1>
+
+                <ul class="coloured-bullets">
+                    <li class="fragment fade-up">Recent attacks</li>
+                    <ul class="coloured-bullets">
+                        <li class="fragment fade-up">GMail</li>
+                        <li class="fragment fade-up">KNF (Komisja Nadzoru Finansowego)</li>
+                        <li class="fragment fade-up">Law firms</li>
+                        <li class="fragment fade-up">Allegro</li>
+                    </ul>
+                    <li class="fragment fade-up"><span>Attacks:</span></li>
+                    <ul class="coloured-bullets">
+                        <li class="fragment fade-up">IoT - Mirai</li>
+                        <li class="fragment fade-up">Phising</li>
+                        <li class="fragment fade-up">Medical stuff</li>
+                    </ul>
+                    <li class="fragment fade-up"><span>Prevention</span></li>
+                </ul>
+            </section>
+
+            <div class="slides">
+            <section  data-background-color="#3b78e7">
+                <div class="title_wrapper">
+                    <h1 class="main-slide title_header" >RECENT ATTACKS</h1>
+                </div>
+            </section>
+                <section>
+                    <section>
+                        <h1 class="main-title">
+                            GMail
+                        </h1>
+                        <p class="fragment fade-up normal-text"><b>Spear phising</b> - John Podesta's mailing box was hacked and revealed.</p>
+                        <img class="fragment fade-up plain" src="src/img/John-Podesta-hack.jpg">
+                        <p class="fragment fade-up normal-text"><i>hxxps://bit.ly/1PibSU0</i></p>
+                    </section>
+                    <section>
+                        <h1 class="main-title">
+                            GMail
+                        </h1>
+                        <p class="fragment fade-up normal-text">Main target: </p>
+                        <img class="fragment fade-up custom" src="src/img/John-Podesta-email.jpg">
+                        <span class="fragment fade-in highlight-red normal-text"><p class="fragment fade-up">No HTTPS</p></span>
+                        <span class="fragment fade-in highlight-red normal-text"><p class="fragment fade-up"><i>tk</i> domain</p></span>
+                        <div class="link_footer">
+                            <a class="fragment fade-up" href="https://niebezpiecznik.pl/post/jak-zhackowano-szefa-kampanii-prezydenckiej-hillary-clinton/">SOURCE</a>
+                        </div>
+                    </section>
+                    <section>
+                        <h1 class="main-title">
+                            Komisja Nadzoru Finansowego
+                        </h1>
+                        <ul class="coloured-bullets">
+                            <li class="fragment fade-up">SWOZ reports</li>
+                            <li class="fragment fade-up">Attacker is unknown</li>
+                            <li class="fragment fade-up">JBOSS security hole</li>
+                            <li class="fragment fade-up">Malicious code was injected</li>
+                            <li class="fragment fade-up">Watering hole - victims were known</li>
+                            <li class="fragment fade-up">Trojan injected in the system processes and through DDNS contacted with different IP addresses</li>
+                            <li class="fragment fade-up">Downloaded additional instructions and sent stolen and encrypted data</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h1 class="main-title">
+                            Allegro
+                        </h1>
+                        <img class="fragment fade-up custom" src="src/img/allegro_1.jpg">
+                        <img class="fragment fade-up custom" src="src/img/allegro_2.jpg">
+                    </section>
+                    <section>
+                        <h1 class="main-title">
+                            Allegro
+                        </h1>
+                        <img class="fragment fade-up plain" style="float:left;" src="src/img/allegro_3.jpg">
+                        <p class="fragment fade-up normal-text" style="font-size: large"><i> hxxp://tracersotra199.com/jump/clk1.php?jl=1830025
+                            hxxp://uroffer.link/new/?service=RnVudG9vbmV6&country=PL
+                            &reffid=347bd8d69d77f1948b87bfd1b1c35902&networkid=127
+                            &optinfo=5782311255&publisher=13235
+                            hxxp://p.funtoonez.com/pl/virusn/?cpid=127_5782311255&publisher=13235</i></p>
+                    </section>
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/jspm_packages/system.js"></script>
+    <script src="/config.js"></script>
+    <script>
+        System.import('/src/js/main');
+    </script>
+</body>
+
+</html>
