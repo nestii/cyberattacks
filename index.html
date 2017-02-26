@@ -29,20 +29,18 @@
                 </h1>
 
                 <ul class="coloured-bullets">
-                    <li class="fragment fade-up">Recent attacks</li>
+                    <li class="fragment fade-up"><b>Recent attacks</b></li>
                     <ul class="coloured-bullets">
                         <li class="fragment fade-up">GMail</li>
                         <li class="fragment fade-up">KNF (Komisja Nadzoru Finansowego)</li>
                         <li class="fragment fade-up">Law firms</li>
                         <li class="fragment fade-up">Allegro</li>
                     </ul>
-                    <li class="fragment fade-up"><span>Attacks:</span></li>
+                    <li class="fragment fade-up"><span><b>Attacks</b></span></li>
                     <ul class="coloured-bullets">
                         <li class="fragment fade-up">IoT - Mirai</li>
-                        <li class="fragment fade-up">Phising</li>
-                        <li class="fragment fade-up">Medical stuff</li>
                     </ul>
-                    <li class="fragment fade-up"><span>Prevention</span></li>
+                    <li class="fragment fade-up"><span><b>Prevention</b></span></li>
                 </ul>
             </section>
 
@@ -65,10 +63,15 @@
                         <h1 class="main-title">
                             GMail
                         </h1>
-                        <p class="fragment fade-up normal-text">Main target: </p>
-                        <img class="fragment fade-up custom" src="src/img/John-Podesta-email.jpg">
-                        <span class="fragment fade-in highlight-red normal-text"><p class="fragment fade-up">No HTTPS</p></span>
-                        <span class="fragment fade-in highlight-red normal-text"><p class="fragment fade-up"><i>tk</i> domain</p></span>
+                        <p class="fragment normal-text">Main target: </p>
+                        <img class="fragment custom" src="src/img/John-Podesta-email.jpg"></br>
+                        <span class="fragment fade-in">
+                             <ul class="coloured-bullets">
+                                <li class="fragment fade-up highlight-red">No HTTPS</li>
+                                <li class="fragment fade-up highlight-red"><i>tk</i> domain</p></li>
+                             </ul>
+                        </span>
+
                         <div class="link_footer">
                             <a class="fragment fade-up" href="https://niebezpiecznik.pl/post/jak-zhackowano-szefa-kampanii-prezydenckiej-hillary-clinton/">SOURCE</a>
                         </div>
@@ -79,11 +82,11 @@
                         </h1>
                         <ul class="coloured-bullets">
                             <li class="fragment fade-up">SWOZ reports</li>
-                            <li class="fragment fade-up">Attacker is unknown</li>
-                            <li class="fragment fade-up">JBOSS security hole</li>
+                            <li class="fragment fade-up">Attacker is <b>unknown</b></li>
+                            <li class="fragment fade-up">JBOSS <b>security hole</b></li>
                             <li class="fragment fade-up">Malicious code was injected</li>
-                            <li class="fragment fade-up">Watering hole - victims were known</li>
-                            <li class="fragment fade-up">Trojan injected in the system processes and through DDNS contacted with different IP addresses</li>
+                            <li class="fragment fade-up">Watering hole - victims were <b>known</b></li>
+                            <li class="fragment fade-up">Trojan injected in the system processes and through <b>DDNS</b> contacted with different IP addresses</li>
                             <li class="fragment fade-up">Downloaded additional instructions and sent stolen and encrypted data</li>
                         </ul>
                     </section>
@@ -91,19 +94,226 @@
                         <h1 class="main-title">
                             Allegro
                         </h1>
-                        <img class="fragment fade-up custom" src="src/img/allegro_1.jpg">
-                        <img class="fragment fade-up custom" src="src/img/allegro_2.jpg">
+                        <img class="fragment fade-up custom-vertical" style="float:left;" src="src/img/allegro_1.jpg">
+                        <img class="fragment fade-up custom-vertical" style="float:left;" src="src/img/allegro_2.jpg">
+                        <img class="fragment fade-up custom-vertical" style="float:left;" src="src/img/allegro_3.jpg">
+                        <div class="link_footer">
+                            <a class="fragment fade-up" href="https://niebezpiecznik.pl/post/nie-wpisuj-dzis-allegro-w-google//">SOURCE</a>
+                        </div>
                     </section>
+
                     <section>
                         <h1 class="main-title">
-                            Allegro
+                            Law firms attack
                         </h1>
-                        <img class="fragment fade-up plain" style="float:left;" src="src/img/allegro_3.jpg">
-                        <p class="fragment fade-up normal-text" style="font-size: large"><i> hxxp://tracersotra199.com/jump/clk1.php?jl=1830025
-                            hxxp://uroffer.link/new/?service=RnVudG9vbmV6&country=PL
-                            &reffid=347bd8d69d77f1948b87bfd1b1c35902&networkid=127
-                            &optinfo=5782311255&publisher=13235
-                            hxxp://p.funtoonez.com/pl/virusn/?cpid=127_5782311255&publisher=13235</i></p>
+                       <blockquote class="normal-text">
+                           Od: “Anna” anna1974@wp.pl <br>
+                           Data: 13 lutego 2017 <br>
+                           Temat: Pelnomocnictwo dla Kancelarii <br>
+                       </blockquote>
+                    </section>
+
+                    <section>
+                        <h1 class="main-title">
+                            Law firms attack
+                        </h1>
+                        <ul class="coloured-bullets">
+                            <li class="fragment fade-up">Email with no text, only attachment <i>Pelnomocnictwo dla Kancelarii_DOC.zip</i></li>
+                            <li class="fragment fade-up">Usually clients send emails with no text, only attachments</li>
+                        </ul>
+                        <img class="fragment fade-up custom" src="src/img/law_firm.jpg">
+                        <ul class="coloured-bullets">
+                            <li class="fragment fade-up">Text file contains password to the rar archive</i></li>
+                            <li class="fragment fade-up">It's a trick for antiviruses which won't check archives secured by a password</li>
+                            <li class="fragment fade-up">Archive contaisns <i>Pełnomocnicto dla Kancelarii_DOC.js</i></li>
+                            <li class="fragment fade-up">This .js file is a <b>dropper</b> properly detected by <b>only one antivirus</b></li>
+                        </ul>
+                        <div class="link_footer">
+                            <a class="fragment fade-up" href="https://niebezpiecznik.pl/post/uwaga-prawnicy-e-mail-pelnomocnictwo-dla-kancelarii-zawieral-wirusa/">SOURCE</a>
+                        </div>
+                    </section>
+                </section>
+
+                <section  data-background-color="#3b78e7">
+                    <div class="title_wrapper">
+                        <h1 class="main-slide title_header" >ATTACKS</h1>
+                    </div>
+                </section>
+                    <section>
+                        <section>
+                            <h1 class="main-title">
+                                IoT - Mirai
+                            </h1>
+                            <ul class="coloured-bullets">
+                                <li class="fragment fade-up">Mirai is a malware which infects IoT devices. It uses them as a platform for further DDoS attacks.</li>
+                                <li class="fragment fade-up">It's coded in GO, while the bots are coded in C</li>
+                                <li class="fragment fade-up">It builds a botnet</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h1 class="main-title">
+                                How does Mirai work?
+                            </h1>
+                            <ul class="coloured-bullets">
+                                <li class="fragment fade-up">Mirai performs a wide range scan of IPs to locate not (or weakly) secured IoT devices.</li>
+                                <li class="fragment fade-up">It uses <i>dictionary attack</i> to guess credentials</li>
+                                <li class="fragment fade-up">It builds a botnet</li>
+                                <li class="fragment fade-up">There was a hardcoded list in code with IPs, which schould be avoided during scan (such as the US Postal Service, the Department of Defense etc.)</li>
+                                <li class="fragment fade-up">It contains some scripts which are meant to <i>kill</i> other worms and trojans and competitors such as Anime malware.</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h1 class="main-title">
+                                How does Mirai work?
+                            </h1>
+                            <pre><code>
+    searching for .anime process
+    table_unlock_val(TABLE_KILLER_ANIME);
+    // If path contains ".anime" kill.
+    if (util_stristr(realpath, rp_len - 1,
+        table_retrieve_val(TABLE_KILLER_ANIME, NULL)) != -1) {
+        unlink(realpath);
+        kill(pid, 9);
+    }
+    table_lock_val(TABLE_KILLER_ANIME);
+                            </code></pre>
+                            <ul class="coloured-bullets">
+                                <li class="fragment fade-up highlight-green">Maximize potential of an attack</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h1 class="main-title">
+                                From Russia with love.
+                            </h1>
+                            <pre><code>
+     // Get username
+     this.conn.SetDeadline(time.Now().Add(60 * time.Second))
+     this.conn.Write([]byte("\033[34;1mпользователь\033[33;3m: \033[0m"))
+     // Get password
+     this.conn.SetDeadline(time.Now().Add(60 * time.Second))
+     this.conn.Write([]byte("\033[34;1mпароль\033[33;3m: \033[0m"))
+                            </code></pre>
+                            <div class="link_footer">
+                                <a class="fragment fade-up" href="https://www.incapsula.com/blog/malware-analysis-mirai-ddos-botnet.html">SOURCE</a>
+                            </div>
+                        </section>
+                    </section>
+
+                <section  data-background-color="#3b78e7">
+                    <div class="title_wrapper">
+                        <h1 class="main-slide title_header" >PREVENTION</h1>
+                    </div>
+                </section>
+
+                <section>
+                    <section>
+                        <h1 class="main-title">
+                           What is U2F?
+                        </h1>
+                        <img class="fragment fade-up custom" src="src/img/u2f.jpg">
+                        <ul class="coloured-bullets">
+                            <li class="fragment fade-up">New open authentication standard</li>
+                            <li class="fragment fade-up">Simple, secure, scalable 2FA</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h1 class="main-title">
+                            Existing solutions
+                        </h1>
+                        <div>
+                            <div style="float: left;padding: 20px 50px 20px 150px;">
+                                <img class="fragment fade-up icon_vertical" src="src/img/smart_card.png">
+                                <p class="fragment fade-up normal-text">Smart card</p>
+                            </div>
+
+                            <div style="float: left; padding: 20px 50px 20px 20px;">
+                                <img class="fragment fade-up icon_vertical" src="src/img/sms.png">
+                                <p class="fragment fade-up normal-text">SMS</p>
+                            </div>
+
+                            <div style="float: left; padding: 20px 50px 20px 20px;">
+                                <img class="fragment fade-up icon_vertical" src="src/img/otp.png">
+                                <p class="fragment fade-up normal-text">OTP devices</p>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section>
+                        <h1 class="main-title">
+                            Still...
+                        </h1>
+                        <div>
+                            <div style="float: left;padding: 20px 20px 20px 100px;">
+                                <img class="fragment fade-up icon_horizontal" src="src/img/ue.png">
+                                <p class="fragment fade-up normal-text">User experience</p>
+                            </div>
+
+                            <div style="float: left; padding: 20px 20px 20px 20px;">
+                                <img class="fragment fade-up icon_vertical" src="src/img/m-in-the-m.png">
+                                <p class="fragment fade-up normal-text">Man-in-the-middle</p>
+                            </div>
+
+                            <div style="float: left; padding: 20px 20px 20px 20px;">
+                                <img class="fragment fade-up icon_horizontal" src="src/img/phising.png">
+                                <p class="fragment fade-up normal-text">Phishing</p>
+                            </div>
+
+                        </div>
+
+
+
+                    </section>
+
+                    <section>
+                        <h1 class="main-title">
+                           Why is it different?
+                        </h1>
+                        <ul class="coloured-bullets">
+                            <li class="fragment fade-up"><b>Simple</b></li>
+                            <ul class="coloured-bullets">
+                                <li class="fragment fade-up">For registration/authentication - touch</li>
+                                <li class="fragment fade-up">No drivers needed to be installed</li>
+                            </ul>
+                            <li class="fragment fade-up"><b>Secure</b></li>
+                            <ul class="coloured-bullets">
+                                <li class="fragment fade-up">Public key cryptography</li>
+                                <li class="fragment fade-up">Protection against phishing, man-in-the-middle</li>
+                            </ul>
+                            <li class="fragment fade-up"><b>One device, many services</b></li>
+                            <ul class="coloured-bullets">
+                                <li class="fragment fade-up">Privacy protected</li>
+                                <li class="fragment fade-up">No secrets shared - between service providers </li>
+                            </ul>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h1 class="main-title">
+                            How does U2F work?
+                        </h1>
+                        <img class="fragment fade-up custom" src="src/img/u2f_entities.png">
+                    </section>
+
+                    <section>
+                        <h1 class="main-title">
+                            U2F authentication
+                        </h1>
+                        <img class="fragment fade-up custom" src="src/img/u2f_authentication.jpg">
+                    </section>
+
+                    <section>
+                        <h1 class="main-title">
+                            U2F registration
+                        </h1>
+                        <img class="fragment fade-up custom" src="src/img/u2f_registration.jpg">
+                        <div class="link_footer">
+                            <a class="fragment fade-up" href="https://www.youtube.com/watch?v=P9sOYAYCYAk">SOURCE</a>
+                        </div>
                     </section>
                 </section>
 

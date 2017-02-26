@@ -15,6 +15,31 @@
     height: 400px;
 }
 
+.reveal section img.icon_vertical {
+    background: white;
+    border: none;
+    box-shadow: none;
+    width: 150px;
+    height: 150px;
+}
+
+.reveal section img.icon_horizontal {
+    background: white;
+    border: none;
+    box-shadow: none;
+    width: 250px;
+    height: 150px;
+}
+
+.reveal section img.custom-vertical {
+    background: white;
+    border: none;
+    box-shadow: none;
+    width: 250px;
+    height: 500px;
+    padding: 0px 20px 0px 20px;
+}
+
 .reveal section img.custom {
     background: white;
     border: none;
@@ -48,6 +73,10 @@
     margin: auto
 }
 
+.reveal blockquote {
+    box-shadow: 0px 0px 2px rgba(0, 188, 212, 0.8) !important;
+}
+
 .reveal .slides .noTransform {
     text-transform: none;
 }
@@ -58,6 +87,7 @@
 
 .reveal div.link_footer {
     padding-top: 40px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .reveal kbd {
@@ -103,4 +133,8 @@
 
 .reveal .slides .title_wrapper {
     display: inline-block;
+}
+
+.reveal .slides section .fragment.highlight-green.visible {
+    color: green !important;
 }
